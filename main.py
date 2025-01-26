@@ -9,5 +9,5 @@ soup = BeautifulSoup(response.content, "html.parser")
 
 dom = etree.HTML(str(soup))
 
-live_Score = (dom.xpath('//*[class="live-scores_live-scores-wrapper__lGxsb"]/text'))
+live_Score = (dom.xpath('//*[class="match-list_match-list-wrapper__x3R4e"]/text'))
 print(live_Score)
